@@ -93,3 +93,39 @@ if($min >=0 && $min <= 15) {
 	echo "Четверть четвертая";
 }
 echo "<br>";
+echo 'Переменная $num может принимать 4 значения: 1, 2, 3 или 4.
+Если она имеет значение “1”, то в переменную $result запишите “зима”, если имеет значение “2”
+– “весна” и так далее.
+Решите задачу сначала через switch-case, а потом перепишите на if-elseif-else';
+echo "<br>";
+$num = rand(1,4);
+$rezult2;
+if($num == 1) {
+	$result2 = "зима";
+} else if($num == 2) {
+	$result2 = "весна";
+} else if($num == 3) {
+	$result2 = "лето";
+} else {
+	$result2 = "осень";
+}
+echo $result2;
+echo "<br>";
+$nu = rand(1,4);
+$re;
+switch ($nu) {
+	case  1:
+		$re = 'зима';
+		break;
+	case  2:
+	    $re = 'весна';
+	    break;
+	case  3:
+    	$re = 'лето';
+    	break;
+	default:
+		$re = "осень";
+		break;
+}
+echo $re;
+echo "<br>";
