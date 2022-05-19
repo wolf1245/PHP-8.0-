@@ -29,3 +29,4 @@ if ($number1 > 0 && $number2 > 0) {
 	echo "Ноль делить , как и на ноль = нельзя" . '$number1= ' . $number1. '  , $number2= ' .$number2;
 }
 echo "<br>";
+echo "<br>";
