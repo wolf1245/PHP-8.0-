@@ -31,3 +31,15 @@ function rgb(int $red = 0, int $green = 0, int $blue = 0) : string
 }
 echo rgb();
 echo "<br>";
+/**
+ * Задание 3
+*В переменной $date лежит дата в формате '31-12-2030'. Преобразуйте эту дату в формат
+*'2030.12.31'.
+ */
+$date = '31-12-2030';
+function getDateMy(string $date) : string
+{
+	return date("Y-m-d", strtotime($date));
+}
+echo getDateMy($date);
+echo "<br>";
