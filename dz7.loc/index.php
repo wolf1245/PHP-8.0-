@@ -38,3 +38,14 @@ function avg(array $array = []) : float
 	return ($sum / count($array));
 }
 echo avg([1, 2]);
+echo "<br>";
+/**
+ * Задание 4.
+*Напишите функцию, которая отнимает от первого числа второе и делит на третье.
+ */
+function minusВivision(float $one, float $two, float $three) : float
+{
+	return (($one -$two) / $three);
+}
+echo minusВivision(3, 1, 1);
+echo "<br>";
