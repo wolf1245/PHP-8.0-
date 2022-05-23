@@ -82,3 +82,20 @@ for($i = 1; $i > 0; $i++) {
 }
 echo $number;
 echo "<br>";
+/**
+ * Дан массив с числами.
+*Числа могут быть положительными и отрицательными.
+*Найдите сумму положительных элементов этого массива.
+ */
+$numbers = [];
+for($i = 0; $i < 100; $i++) {
+	$numbers[] = rand(-50, 50);
+}
+//var_dump($numbers);
+$sum = 0;
+foreach ($numbers as &$value) {
+	if ($value > 0) {
+		$sum += $value;
+	}
+}
+echo $sum;
