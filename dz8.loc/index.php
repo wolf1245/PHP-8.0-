@@ -17,3 +17,17 @@ function randomString(int $lengchString) : string
 }
 echo randomString(5);
 echo "<br>";
+/**
+ * Задание 2
+*Создайте функцию rgb(), которая будет принимать три числовых аргумента и возвращать строку
+*вида “rgb(23,100,134)”.
+*Если аргументы не заданы, считать их равными нулю.
+*При реализации иcпользовать встроенную функцию sprintf().
+ */
+function rgb(int $red = 0, int $green = 0, int $blue = 0) : string
+{
+	$strngMy = 'rgb';
+	return $strngMy .= '(' .printf("%%u = '%u'\n", $red) . printf("%%u = '%u'\n", $green) . printf("%%u = '%u'\n", $blue) . ')';
+}
+echo rgb();
+echo "<br>";
