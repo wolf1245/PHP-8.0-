@@ -49,3 +49,21 @@ function minusВivision(float $one, float $two, float $three) : float
 }
 echo minusВivision(3, 1, 1);
 echo "<br>";
+/**
+ * Задание 5.
+*Создайте функцию, которая принимает параметром число от 1 до 7, а возвращает день недели
+*на русском языке.
+ */
+function dayOfTheWeek(int $numberDay) : string
+{
+	$days = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'];
+	$rezult = "";
+  if($numberDay != 0 && $numberDay <= 7) {
+    $rezult = $days[--$numberDay];
+	}else{
+    $rezult = "Нет такого дня по счету";
+  }
+	return $rezult;
+}
+echo dayOfTheWeek(0);
+echo "<br>";
