@@ -43,3 +43,15 @@ function getDateMy(string $date) : string
 }
 echo getDateMy($date);
 echo "<br>";
+/**
+ * Задание 4.
+*Напишите функцию, которая разделяет массив на части заданного размера.
+ */
+function arrayApart(array $array, $countArr) : array
+{
+	$parts = intval(round((count($array) / $countArr), 0, PHP_ROUND_HALF_UP));
+	$arr = array_chunk($array, $parts);
+	return $arr;
+}
+var_dump(arrayApart([1, 2, 5, 6, 8], 10));
+echo "<br>";
