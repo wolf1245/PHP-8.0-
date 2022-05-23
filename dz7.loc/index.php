@@ -23,3 +23,18 @@ $rgb = function (int $red = 0, int $green = 0, int $blue = 0) : string
 };
 echo $rgb();
 echo "<br>";
+/**
+ * Задание 3
+*Создайте функцию avg().
+*Функция принимает массив чисел.
+*Нужно возвращать среднее значение всех чисел массива.
+ */
+function avg(array $array = []) : float
+{
+	$sum = 0;
+	foreach ($array as &$value) {
+		$sum += $value;
+	}
+	return ($sum / count($array));
+}
+echo avg([1, 2]);
