@@ -55,3 +55,14 @@ function arrayApart(array $array, $countArr) : array
 }
 var_dump(arrayApart([1, 2, 5, 6, 8], 10));
 echo "<br>";
+/**
+ * Задание 5.
+*Создайте функцию, которая будет вычислять количество слов в строке
+ */
+function shareString(string $text) : array
+{
+	$chars = preg_split('/[\s\,\.\:\;\-]+/', $text);
+	return $chars;
+}
+var_dump(shareString("Hello, my friends"));
+echo "<br>";
