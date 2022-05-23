@@ -45,3 +45,18 @@ $numbers = [2, 5, 3, 9];
 $rezult = ($numbers[0] * $numbers[1]) + ($numbers[2] * $numbers[3]);
 echo $rezult;
 echo "<br>";
+/**
+ * Задание 5.
+*Создайте многомерный массив $arr.
+*$arr = [
+*'cms' =>['joomla', 'wordpress', 'drupal'],
+*'colors' => ['blue'=>'голубой', 'red'=>'красный', 'green'=>'зеленый']
+*];
+*Выведите с его помощью фразу 'Мой любимый цвет - зеленый'.
+ */
+$arr = [
+'cms' =>['joomla', 'wordpress', 'drupal'],
+'colors' => ['blue'=>'голубой', 'red'=>'красный', 'green'=>'зеленый']
+];
+echo "Мой люимый цвет - {$arr['colors']['green']}";
+echo "<br>";
