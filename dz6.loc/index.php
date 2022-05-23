@@ -48,3 +48,13 @@ foreach ($numbers as &$value) {
 	}
 }
 echo "<br>";
+/**
+ * Задание 5.
+*С помощью цикла for заполните массив числами от 1 до 100.
+ */
+$numbers = [];
+for($i = 1; $i < 100; $i++) {
+	$numbers[] = $i;
+}
+var_dump($numbers);
+ echo "<br>";
