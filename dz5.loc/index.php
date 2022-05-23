@@ -60,3 +60,4 @@ $arr = [
 ];
 echo "Мой люимый цвет - {$arr['colors']['green']}";
 echo "<br>";
+
