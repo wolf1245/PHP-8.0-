@@ -67,3 +67,18 @@ function dayOfTheWeek(int $numberDay) : string
 }
 echo dayOfTheWeek(0);
 echo "<br>";
+/**
+ * Задание 6.
+*Создайте функцию, которая принимает ассоциативный массив и возвращает новый массив,
+*который будет содержать только ключи входящего массива.
+ */
+function keysArray(array $array) : array
+{
+	$arr = [];
+	foreach ($array as $key=>&$value) {
+		$arr[] = $key;
+	}
+	return $arr;
+}
+var_dump(keysArray([1, 2, 'tr' => 'ggg']));
+echo "<br>";
