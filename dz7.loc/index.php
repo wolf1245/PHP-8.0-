@@ -82,3 +82,14 @@ function keysArray(array $array) : array
 }
 var_dump(keysArray([1, 2, 'tr' => 'ggg']));
 echo "<br>";
+/**
+ * Задание 7.
+*Создайте функцию htmlWrap().
+*Функция принимает первым аргументом - текст, а вторым - имя тега.
+*Нужно возвращать переданый текст, который будет заключен в html-тегах.
+ */
+function htmlWrap(string $text, string $nameTag) : string
+{
+	return "<{$nameTag}>{$text}<{$nameTag}/>";
+}
+echo htmlWrap('h1', 'h1');
