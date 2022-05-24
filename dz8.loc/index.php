@@ -81,3 +81,26 @@ function valueTolower(array $array) : array
 }
 var_dump(valueTolower(['key' => 'hgHHHH', 1 => 'KKKJJcdnj',]));
 echo "<br>";
+/**
+ * Задание 7.
+*Создайте функцию shuffle().
+*Функция принимает аргумент - массив.
+*Нужно возвращать массив, где элементы отсортированы в случайном порядке.
+ */
+function shuffleMy(array $array) : array
+{
+	$arrKeys = array_keys($array);
+	$arr = [];
+	for($i = 0; $i < count($array); $i++)
+	{   $keyArr = $arrKeys[rand(0, (count($arrKeys) - 1))];
+			if(!array_key_exists($keyArr, $arr)) {
+					$arr[$keyArr] = $array[$keyArr];
+			} else {
+					--$i;
+					continue;
+			}
+	}
+	return $arr;
+}
+var_dump(shuffleMy(['key' => 'hgHHHH', 1 => 'KKKJJcdnj', 2 => 'KKKJJcdnj', 'hhh' => 'KKKJJcdnj',]));
+echo "<br>";
