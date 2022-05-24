@@ -66,3 +66,18 @@ function shareString(string $text) : array
 }
 var_dump(shareString("Hello, my friends"));
 echo "<br>";
+/**
+ * Задание 6.
+*Создайте функцию, которая принимает массив и возвращает новый, где все значения массива
+*приведены в нижний регистр, а первая буква в верхний.
+ */
+function valueTolower(array $array) : array
+{
+	$arr = [];
+	foreach ($array as $key => &$value) {
+		$arr[$key] = ucfirst(mb_strtolower($value));
+	}
+	return $arr;
+}
+var_dump(valueTolower(['key' => 'hgHHHH', 1 => 'KKKJJcdnj',]));
+echo "<br>";
